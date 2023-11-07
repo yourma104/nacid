@@ -1,0 +1,44 @@
+/* about_style.css */
+
+/* Container for the video grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
+    gap: 20px; /* Adjust the gap between the videos */
+    margin-bottom: 5%; 
+    margin-top: 4%; 
+    margin-left: 13%;/* Space below the grid */
+    margin-right: 13%;/* Space below the grid */
+  }
+  
+  .video-wrapper {
+    background: #fff; /* Optional: background color for the video wrapper */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+  }
+  
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Adjustments for responsiveness */
+  @media screen and (max-width: 960px) { /* Adjust the breakpoint as needed */
+    .video-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 640px) { /* Adjust the breakpoint as needed */
+    .video-grid {
+      grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+  }
+  
