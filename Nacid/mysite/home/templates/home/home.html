@@ -1,0 +1,31 @@
+<!-- about.html -->
+
+{% extends "home/base.html" %}
+{% load static %} 
+
+{% block pagename %}
+    {{ Nacid }}
+{% endblock pagename %}
+
+{% block extrahead %}
+{% endblock extrahead %}
+
+{% block content %}
+<!-- The container for the video grid -->
+<div class="video-grid">
+    <!-- Repeat this div for each video, replacing the src with the correct one -->
+    <div class="video-wrapper">
+        <iframe src="https://www.xvideos.com/embedframe/73112127" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+    <div class="video-wrapper">
+        <iframe 
+            src="https://www.pornhub.com/embed/652704ed79bce" allowfullscreen="allowfullscreen"></iframe></iframe>
+    </div>
+    <div class="video-wrapper">
+        <iframe src="https://www.xvideos.com/embedframe/78970459" frameborder=0 width=510 height=400 scrolling=no allowfullscreen=allowfullscreen></iframe>
+    </div>
+    <!-- Repeat for more videos... -->
+</div>
+{% endblock content %}
+
+
